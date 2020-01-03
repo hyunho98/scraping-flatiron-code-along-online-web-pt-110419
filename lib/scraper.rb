@@ -28,6 +28,8 @@ class Scraper
   def make_courses
     get_courses.each{|course|
       newCourse = Course.new
-      newCourse.title = course.css("h2").text}
+      newCourse.title = course.css("h2").text
+      newCourse.schedule = course.css(".date").text
+      newCourse.description = course.css("p")}
   end
 end
