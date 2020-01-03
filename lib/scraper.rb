@@ -22,5 +22,5 @@ class Scraper
   end
 
   def get_courses
-    doc
+    
 end
